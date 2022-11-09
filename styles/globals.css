@@ -1,26 +1,45 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-white;
+  font-family: 'Lexend', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+p {
+  @apply font-[300] leading-7;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  @apply w-screen max-w-[500px] tablet:max-w-[1160px] px-6 mx-auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* miscilanious */
+
+.hero-gradient {
+  background: radial-gradient(
+    63.26% 106.22% at 0% 100%,
+    #ad81ff 0%,
+    #6d24f3 100%
+  );
+}
+
+.transition {
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* hover effects */
+.hvr {
+  @apply ease-in-out duration-100 cursor-pointer;
+}
+
+/* buttons */
+
+.btn-dark {
+  @apply hvr bg-dark text-white rounded-lg px-[26px] py-[15px];
+}
+
+.btn-outline {
+  @apply hvr bg-white border border-dark text-dark  rounded-lg px-[26px] py-[15px];
 }
