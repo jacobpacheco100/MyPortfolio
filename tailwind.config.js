@@ -11,6 +11,7 @@ module.exports = {
         primary: '#6D24F3',
         secondary: '#AD81FF',
         white: '#F1EFFF',
+        subWhite: '#f1efffd2',
         dark: '#282157',
         text: '#645F89',
       },

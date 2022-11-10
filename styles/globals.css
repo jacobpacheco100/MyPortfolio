@@ -19,6 +19,10 @@ p {
   @apply w-screen max-w-[500px] tablet:max-w-[900px] px-6 mx-auto;
 }
 
+.contact-container {
+  @apply w-screen max-w-[500px] tablet:max-w-[800px] px-6 mx-auto;
+}
+
 /* miscilanious */
 
 .hero-gradient {
@@ -39,6 +43,14 @@ p {
   grid-template-rows: masonry;
   align-tracks: start;
   justify-tracks: start;
+}
+
+.label-styles {
+  @apply font-light text-sm;
+}
+
+.input-styles {
+  @apply w-full bg-white border-b border-dark outline-none py-3 focus:border-b-primary ease-in duration-150 font-light placeholder:text-[#a8a6c2] placeholder:font-light placeholder:text-sm;
 }
 
 /* hover effects */

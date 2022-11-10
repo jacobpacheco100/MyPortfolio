@@ -5,7 +5,7 @@ import { BsArrowUpRightSquare } from 'react-icons/bs'
 
 const Projects = () => {
   return (
-    <section className='grid-container mb-[200px]'>
+    <section className='grid-container '>
       <h1 className='mt-44 laptop:mt-20 mb-16 text-dark font-medium text-xl text-center'>
         Projects
       </h1>
