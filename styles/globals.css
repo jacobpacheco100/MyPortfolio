@@ -15,6 +15,10 @@ p {
   @apply w-screen max-w-[500px] tablet:max-w-[1160px] px-6 mx-auto;
 }
 
+.grid-container {
+  @apply w-screen max-w-[500px] tablet:max-w-[900px] px-6 mx-auto;
+}
+
 /* miscilanious */
 
 .hero-gradient {
@@ -29,6 +33,14 @@ p {
   transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.mason-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: masonry;
+  align-tracks: start;
+  justify-tracks: start;
+}
+
 /* hover effects */
 .hvr {
   @apply ease-in-out duration-100 cursor-pointer;
@@ -37,9 +49,9 @@ p {
 /* buttons */
 
 .btn-dark {
-  @apply hvr bg-dark text-white rounded-lg px-[26px] py-[15px];
+  @apply hvr bg-dark text-white rounded-lg px-[26px] py-[15px] hover:bg-[#000000] hover:text-white;
 }
 
 .btn-outline {
-  @apply hvr bg-white border border-dark text-dark  rounded-lg px-[26px] py-[15px];
+  @apply hvr bg-white border border-dark text-dark  rounded-lg px-[26px] py-[15px] hover:bg-primary hover:border-primary hover:text-white;
 }

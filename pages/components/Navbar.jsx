@@ -27,7 +27,7 @@ const Navbar = () => {
 
         {/* ismenu */}
         <div
-          className={`h-[629px] w-[259px] border border-[#fff] bg-[#f7f6ffe6] tablet:bg-[#f7f6ffc2] fixed top-20 rounded-lg translate-x-[-45%]  tablet:translate-x-[-80%] flex flex-col items-center justify-center space-y-14 transition ${
+          className={`h-[629px] w-[259px] border border-text bg-white tablet:bg-[#f1efffb1] fixed top-20 rounded-lg translate-x-[-45%]  tablet:translate-x-[-80%] flex flex-col items-center justify-center space-y-14 transition ${
             isMenu ? '' : 'translate-y-[-120%]'
           }`}
         >
