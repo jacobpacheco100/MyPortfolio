@@ -5,10 +5,15 @@ import { RiMailSendLine } from 'react-icons/ri'
 const Contact = () => {
   return (
     <div className='contact-container mt-[230px] mb-44'>
-      <h1 className='text-xl text-center font-medium'>Send me a message!</h1>
-      <p className='text-center mt-4 text-text'>
+      <h1 className='heading text-center font-medium '>Send me a message!</h1>
+      <p className='text-center mt-4 text-text text-sm laptop:text-md leading-7'>
         Get in touch or shoot me an email directly on <br />
-        <strong className='text-primary'>jacobpachecoofficial@gmail.com</strong>
+        <a
+          href='mailto:jacobpachecoofficial@gmail.com'
+          className='text-primary font-medium hover:underline'
+        >
+          jacobpachecoofficial@gmail.com
+        </a>
       </p>
 
       {/* form */}
@@ -21,7 +26,7 @@ const Contact = () => {
             <br />
             <input
               className='input-styles'
-              type='text'
+              type='email'
               name='email'
               placeholder='Enter your name'
             />

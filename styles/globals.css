@@ -11,6 +11,10 @@ p {
   @apply font-[300] leading-7;
 }
 
+.heading {
+  @apply leading-10 text-xlMobile tablet:text-xl;
+}
+
 .container {
   @apply w-screen max-w-[500px] tablet:max-w-[1160px] px-6 mx-auto;
 }
@@ -43,6 +47,10 @@ p {
   grid-template-rows: masonry;
   align-tracks: start;
   justify-tracks: start;
+}
+
+.box-shadow {
+  box-shadow: rgba(8, 8, 18, 0.75) 0px -100px 100px -0px inset;
 }
 
 .label-styles {

@@ -6,8 +6,8 @@ const About = () => {
       <div className='text-left flex flex-col laptop:items-center laptop:flex-row  '>
         <div className='h-[100px] w-[100px] laptop:h-[165px] laptop:w-[165px] rounded-xl bg-text laptop:mr-8 bg-[url("/irl.jpeg")] bg-cover bg-center'></div>
         <div>
-          <h1 className='text-xl text-dark mt-4 laptop:mt-0'>Who am I</h1>
-          <p className=' text-text mt-4 pr-9 max-w-[700px]'>
+          <h1 className='heading text-dark mt-4 laptop:mt-0'>Who am I</h1>
+          <p className=' text-text mt-6 pr-9 max-w-[700px]'>
             My name is Jacob, I have Extensive practice building complex
             front-end web applications featuring modern SEO practices using Next
             Js, as well as 3+ years of freelancing expirience on twitter
@@ -20,17 +20,19 @@ const About = () => {
       <div className='mt-24 laptop:mt-0 text-left flex flex-col laptop:items-center laptop:text-center laptop:flex-row-reverse '>
         <div className='h-[100px] w-[100px] laptop:hidden rounded-xl bg-text laptop:ml-8'></div>
         <div>
-          <h1 className='text-xl text-dark mt-4 laptop:mt-0'>
+          <h1 className='heading text-dark mt-4 laptop:mt-0'>
             Developer & Designer
           </h1>
-          <p className=' text-text mt-4 pr-9 laptop:pr-0 max-w-[700px]'>
+          <p className=' text-text mt-6 pr-9 laptop:pr-0 max-w-[700px]'>
             While developing websites is my fortei, I also love to design as
             much as coding, It sort of a game to me when it comes to designing a
             user interphase, you want the design to be unique enough to catch
             the users attention, while keeping the application as easy to use as
             possible. Finding that balance is where the fun part.
           </p>
-          <button className='btn-outline mt-8'>View My Designs</button>
+          <a href='https://www.behance.net/jacobpacheb14a' target='_blank'>
+            <button className='btn-outline mt-8'>View My Designs</button>
+          </a>
         </div>
       </div>
     </div>
