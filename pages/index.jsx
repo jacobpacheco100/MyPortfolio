@@ -15,8 +15,8 @@ export default function Index() {
     <>
       <Navbar mainIsVisible={mainIsVisible} />
       <Hero />
+      <About />
       <main ref={main}>
-        <About />
         <Projects />
         <Contact />
         <Footer />

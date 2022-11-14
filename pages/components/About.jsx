@@ -4,12 +4,12 @@ const About = () => {
   return (
     <div
       id='about'
-      className='mt-20 laptop:h-screen container flex flex-col items-center justify-center laptop:space-y-32'
+      className='mt-44 laptop:mt-20 laptop:h-screen container flex flex-col items-center justify-center laptop:space-y-32'
     >
       <div className='text-left flex flex-col laptop:items-center laptop:flex-row  '>
         <div className='h-[100px] w-[100px] laptop:h-[165px] laptop:w-[165px] rounded-xl bg-text laptop:mr-8 bg-[url("/irl.jpeg")] bg-cover bg-center'></div>
         <div>
-          <h1 className='heading text-dark mt-4 laptop:mt-0'>Who am I</h1>
+          <h1 className='heading text-dark mt-6 laptop:mt-0'>Who am I</h1>
           <p className=' text-text mt-6 pr-9 max-w-[700px]'>
             My name is Jacob, I am a{' '}
             <a
@@ -31,7 +31,7 @@ const About = () => {
       <div className='mt-24 laptop:mt-0 text-left flex flex-col laptop:items-center laptop:text-center laptop:flex-row-reverse '>
         <div className='h-[100px] w-[100px] laptop:hidden rounded-xl bg-text laptop:ml-8'></div>
         <div id='designs'>
-          <h1 className='heading text-dark mt-4 laptop:mt-0'>
+          <h1 className='heading text-dark mt-6 laptop:mt-0'>
             Developer & Designer
           </h1>
           <p className=' text-text mt-6 pr-9 laptop:pr-0 max-w-[700px]'>

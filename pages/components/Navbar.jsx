@@ -11,14 +11,14 @@ const Navbar = ({ mainIsVisible }) => {
   const [isMenu, setMenu] = useState(false)
 
   return (
-    <section className='container z-50 h-24 fixed left-0 right-0 top-0 flex items-center justify-center tablet:justify-between'>
+    <section className='container z-50 h-24 fixed left-0 right-0 top-0 flex items-center justify-center laptop:justify-between'>
       <Link
         to='home'
         spy={true}
         smooth={true}
         offset={-200}
         duration={500}
-        className='hover:cursor-pointer hidden tablet:block h-6 hover:cursor-pointer'
+        className='hover:cursor-pointer hidden laptop:block h-6 '
       >
         <svg
           width='74'
@@ -38,12 +38,15 @@ const Navbar = ({ mainIsVisible }) => {
       </Link>
 
       <div className='relative'>
+        {/* burger menu */}
+        {/* icon bg */}
         <div
           onClick={() => setMenu((prev) => !prev)}
-          className={`${
-            mainIsVisible ? 'bg-[#e4e1f1] laptop:bg-white' : 'hover:bg-dark'
-          } h-12 w-12 rounded-xl flex items-center justify-center  laptop:hover:bg-[#e4e1f1] hvr`}
+          className={`h-12 w-12 rounded-xl flex items-center justify-center ${
+            mainIsVisible && 'bg-[#e4e1f1d0]'
+          }  laptop:hover:bg-[#e4e1f1] hvr`}
         >
+          {/* icon */}
           <HiOutlineMenuAlt3
             className={`${
               mainIsVisible ? 'text-dark' : 'text-white laptop:text-dark'
@@ -51,9 +54,9 @@ const Navbar = ({ mainIsVisible }) => {
           />
         </div>
 
-        {/* ismenu */}
+        {/* menu */}
         <div
-          className={`h-[629px] w-[259px] border border-text bg-white tablet:bg-[#f1efffe6] max-h-[80vh] fixed top-20 rounded-lg translate-x-[-45%]  tablet:translate-x-[-80%] flex flex-col items-center justify-center space-y-14 transition ${
+          className={`h-[629px] w-[259px] border border-text bg-[#f1effff1] tablet:bg-[#f1efffe6] max-h-[80vh] fixed top-20 rounded-lg translate-x-[-45%]  laptop:translate-x-[-80%] flex flex-col items-center justify-center space-y-14 transition ${
             isMenu ? '' : 'translate-y-[-120%]'
           }`}
         >

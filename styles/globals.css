@@ -16,11 +16,11 @@ p {
 }
 
 .container {
-  @apply w-screen max-w-[500px] tablet:max-w-[1300px] px-6 mx-auto;
+  @apply w-screen max-w-[500px] tablet:max-w-[1300px] px-6 mx-auto tablet:px-[10%];
 }
 
 .grid-container {
-  @apply w-screen max-w-[500px] tablet:max-w-[900px] px-6 mx-auto;
+  @apply w-screen max-w-[500px] tablet:max-w-[900px] px-6 mx-auto tablet:px-[10%] laptop:px-0;
 }
 
 .contact-container {
