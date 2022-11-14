@@ -11,7 +11,7 @@ const Navbar = ({ mainIsVisible }) => {
   const [isMenu, setMenu] = useState(false)
 
   return (
-    <section className='container z-50 h-24 fixed left-0 right-0 top-0 flex items-center justify-center laptop:justify-between'>
+    <section className='nav-container z-50 h-24 fixed left-0 right-0 top-0 flex items-center justify-center laptop:justify-between'>
       <Link
         to='home'
         spy={true}
