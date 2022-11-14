@@ -4,7 +4,7 @@ import { RiMailSendLine } from 'react-icons/ri'
 
 const Contact = () => {
   return (
-    <div className='contact-container mt-[230px] mb-44'>
+    <div id='contact' className='contact-container mt-[230px] mb-44'>
       <h1 className='heading text-center font-medium '>Send me a message!</h1>
       <p className='text-center mt-4 text-text text-sm laptop:text-md leading-7'>
         Get in touch or shoot me an email directly on <br />
@@ -28,20 +28,20 @@ const Contact = () => {
               className='input-styles'
               type='email'
               name='email'
-              placeholder='Enter your name'
+              placeholder='Enter your email address'
             />
           </div>
 
           <div className='w-full px-3 mt-8 tablet:mt-0'>
-            <label className='label-styles' htmlFor='email'>
+            <label className='label-styles' htmlFor='name'>
               Full Name
             </label>{' '}
             <br />
             <input
               className='input-styles'
               type='text'
-              name='email'
-              placeholder='Enter your email address'
+              name='name'
+              placeholder='Enter your name'
             />
           </div>
         </div>
@@ -50,8 +50,8 @@ const Contact = () => {
             Your message
           </label>{' '}
           <br />
-          <input
-            className='input-styles'
+          <textarea
+            className='input-styles laptop:max-h-[49px]'
             type='text'
             name='email'
             placeholder='Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?'

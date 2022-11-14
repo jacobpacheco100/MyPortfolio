@@ -64,16 +64,18 @@ const Projects = () => {
   })
 
   return (
-    <section className='grid-container '>
+    <section id='projects' className='grid-container '>
       <h1 className='heading mt-44 laptop:mt-20 mb-16 text-dark font-medium text-center'>
         Projects
       </h1>
 
       <div className='tablet:columns-2 gap-5'>{displayProjects}</div>
 
-      <button className='absolute flex items-center mt-8 font-light border-l-4 pl-4 border-primary hover:underline hvr hover:border-l-8'>
-        Visit My Resume <BsArrowUpRightSquare className='ml-2 ' />
-      </button>
+      <a href='https://docs.google.com/document/d/e/2PACX-1vTRNMzMdCh0hkffskcZqfckKrRKX9si9zImiYeFn1ie7VzyBrmdkmorMDZWH9PSWB5mYl1OCARq7kkV/pub'>
+        <button className='absolute flex items-center mt-8 font-light border-l-4 pl-4 border-primary hover:underline hvr hover:border-l-8'>
+          Visit My Resume <BsArrowUpRightSquare className='ml-2 ' />
+        </button>
+      </a>
     </section>
   )
 }

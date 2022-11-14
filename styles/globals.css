@@ -16,7 +16,7 @@ p {
 }
 
 .container {
-  @apply w-screen max-w-[500px] tablet:max-w-[1160px] px-6 mx-auto;
+  @apply w-screen max-w-[500px] tablet:max-w-[1300px] px-6 mx-auto;
 }
 
 .grid-container {
