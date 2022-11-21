@@ -6,33 +6,12 @@ import { BsArrowUpRightSquare } from 'react-icons/bs'
 const Projects = () => {
   const data = [
     {
-      name: 'Modivel Design Agency',
+      name: 'Audiophile Ecomerce',
       stack: 'Next js, Tailwind CSS, 3D Models, Landing Page ',
-      img: '/proj-previews/modivel.png',
+      img: '/proj-previews/audiophile.png',
       repoUrl: 'https://github.com/jacobpacheco100/modivel-design-agency',
       siteUrl: 'https://modivel.netlify.app/',
       isBig: true,
-    },
-    {
-      name: 'BookMark Landing Page',
-      stack: 'Javascript, Html, Bootstrap, Landing Page ',
-      img: '/proj-previews/bookmark.jpg',
-      siteUrl: 'https://jacobpacheco100.github.io/bookmark-landing-page/',
-      isBig: false,
-    },
-    {
-      name: 'Gradientology',
-      stack: 'React js, Tailwind, JSON, Local Storage',
-      img: '/proj-previews/gradientology.png',
-      siteUrl: 'https://gradientology.netlify.app/',
-      isBig: true,
-    },
-    {
-      name: 'Cryptopia',
-      stack: 'React js, Tailwind CSS, API, React Router ',
-      img: '/proj-previews/cryptopia.png',
-      siteUrl: 'https://cryptopia.netlify.app/',
-      isBig: false,
     },
     {
       name: 'Skotcha Task Manager',
@@ -41,6 +20,37 @@ const Projects = () => {
       siteUrl: 'https://skotcha.netlify.app/',
       isBig: true,
     },
+    {
+      name: 'Modivel Design Agency',
+      stack: 'Next js, Tailwind CSS, 3D Models, Landing Page ',
+      img: '/proj-previews/modivel.png',
+      repoUrl: 'https://github.com/jacobpacheco100/modivel-design-agency',
+      siteUrl: 'https://modivel.netlify.app/',
+      isBig: true,
+    },
+
+    {
+      name: 'BookMark Landing Page',
+      stack: 'Javascript, Html, Bootstrap, Landing Page ',
+      img: '/proj-previews/bookmark.jpg',
+      siteUrl: 'https://jacobpacheco100.github.io/bookmark-landing-page/',
+      isBig: false,
+    },
+    {
+      name: 'Cryptopia',
+      stack: 'React js, Tailwind CSS, API, React Router ',
+      img: '/proj-previews/cryptopia.png',
+      siteUrl: 'https://cryptopia.netlify.app/',
+      isBig: true,
+    },
+    {
+      name: 'Gradientology',
+      stack: 'React js, Tailwind, JSON, Local Storage',
+      img: '/proj-previews/gradientology.png',
+      siteUrl: 'https://gradientology.netlify.app/',
+      isBig: false,
+    },
+
     {
       name: 'Game Show App',
       stack: 'Javascript, Html, CSS',
